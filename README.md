@@ -1,5 +1,5 @@
-# Dotnet Core WebAPI Starter
- .NET C# 7.0 Web API with service class library and mockservice DI
+# .NET 7.0 WebAPI Starter
+ .NET Core 7.0 Web API with service class library and mockservice DI
 
 ### CoreWebAPIStarter Layers/Projects:
 
