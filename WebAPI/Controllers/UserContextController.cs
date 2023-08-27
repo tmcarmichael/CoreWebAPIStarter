@@ -7,9 +7,9 @@ namespace WebAPI.Controllers
     [Route("")]
     public class UserContextController : ControllerBase
     {
-        private readonly ContextService _userContextService;
+        private readonly IContextService _userContextService;
 
-        public UserContextController(ContextService userContextService)
+        public UserContextController(IContextService userContextService)
         {
             _userContextService = userContextService;
         }

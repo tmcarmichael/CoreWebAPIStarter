@@ -5,7 +5,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddTransient<ContextService>();
+
+// Prod
+//builder.Services.AddTransient<IContextService, ContextService>();
+
+// Dev
 builder.Services.AddSingleton<IContextService, MockContextService>();
 
 // Configure the HTTP request pipeline.

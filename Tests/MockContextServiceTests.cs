@@ -15,7 +15,7 @@ public class MockContextServiceTests
         int testId = 123;
 
         // Act
-        var result = _mockContextService.GetData(testId);
+        var result = _mockContextService.GetUserContextData(testId);
 
         // Assert
         Assert.Equal($"Mocked Data for ID: {testId}", result);

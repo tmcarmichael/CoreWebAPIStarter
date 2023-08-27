@@ -5,12 +5,12 @@ public class MockContextService : IContextService
 
     public MockContextService()
     {
-        Mock.Setup(service => service.GetData(It.IsAny<int>()))
+        Mock.Setup(service => service.GetUserContextData(It.IsAny<int>()))
             .Returns<int>(id => $"Mocked Data for ID: {id}");
     }
 
-    public string GetData(int id)
+    public string GetUserContextData(int id)
     {
-        return Mock.Object.GetData(id);
+        return Mock.Object.GetUserContextData(id);
     }
 }

@@ -119,3 +119,8 @@ ehthumbs.db
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
+*.bin
+*.v2
+*.vsidx
+.vs/CoreWebAPIStarter/config/applicationhost.config
+*.vsidx

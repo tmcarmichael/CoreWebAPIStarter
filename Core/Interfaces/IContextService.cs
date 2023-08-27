@@ -1,5 +1,5 @@
 ﻿
 public interface IContextService
 {
-    string GetData(int id);
+    string GetUserContextData(int id);
 }

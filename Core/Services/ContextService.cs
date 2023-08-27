@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Services
 {
-    public class ContextService
+    public class ContextService : IContextService
     {
         private readonly IContextService _contextService;
 
@@ -18,7 +18,7 @@ namespace Core.Services
 
         public string GetUserContextData(int userId)
         {
-            return _contextService.GetData(userId);
+            return _contextService.GetUserContextData(userId);
         }
     }
 }
