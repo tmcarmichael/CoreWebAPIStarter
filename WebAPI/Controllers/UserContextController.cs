@@ -17,7 +17,7 @@ namespace WebAPI.Controllers
         [HttpGet("userContext")]
         public IActionResult UserEndpoint()
         {
-            var userId = 123;  // This is just a static example; adapt as needed.
+            var userId = 123;
             var data = _userContextService.GetUserContextData(userId);
             return Ok(data);
         }

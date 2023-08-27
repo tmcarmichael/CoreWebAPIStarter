@@ -5,7 +5,6 @@ public class MockContextService : IContextService
 
     public MockContextService()
     {
-        // Setup default mock behaviors here.
         Mock.Setup(service => service.GetData(It.IsAny<int>()))
             .Returns<int>(id => $"Mocked Data for ID: {id}");
     }
